@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/architects_daughter</item>
+        <item>@font/caveat</item>
+        <item>@font/dancing_script</item>
+        <item>@font/indie_flower</item>
+        <item>@font/kalam</item>
+        <item>@font/patrick_hand</item>
+        <item>@font/permanent_marker</item>
+        <item>@font/satisfy</item>
+        <item>@font/shadows_into_light</item>
+    </array>
+</resources>
