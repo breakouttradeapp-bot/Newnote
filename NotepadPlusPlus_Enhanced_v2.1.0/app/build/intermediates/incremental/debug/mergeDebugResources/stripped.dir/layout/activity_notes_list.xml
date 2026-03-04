@@ -23,6 +23,15 @@
             app:titleTextColor="@color/text_primary"
             app:menu="@menu/menu_notes_list" />
 
+        <!-- AdMob Banner (TOP) -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
         <!-- Search Bar -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,36 +62,16 @@
                     android:imeOptions="actionSearch"
                     android:maxLines="1"
                     android:textSize="14sp"
-                    android:textColor="@color/text_primary" />
+                    android:textColor="@color/text_primary"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Label Filter Chips -->
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/chipGroupLabels"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:visibility="gone"
-                app:singleSelection="true" />
-
-        </LinearLayout>
-
-        <!-- AdMob Banner at TOP -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:elevation="4dp"
-            android:paddingBottom="4dp">
-
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+                app:singleSelection="true"/>
 
         </LinearLayout>
 
@@ -93,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
     <!-- Empty State -->
     <LinearLayout
@@ -110,7 +99,7 @@
             android:layout_height="80dp"
             android:src="@drawable/ic_empty_notes"
             android:contentDescription="@string/no_notes"
-            app:tint="@color/text_secondary" />
+            app:tint="@color/text_secondary"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -119,7 +108,7 @@
             android:text="@string/no_notes"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/text_primary" />
+            android:textColor="@color/text_primary"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -127,18 +116,17 @@
             android:layout_marginTop="8dp"
             android:text="@string/tap_to_add"
             android:textSize="14sp"
-            android:textColor="@color/text_secondary" />
+            android:textColor="@color/text_secondary"/>
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
         android:paddingHorizontal="12dp"
         android:paddingTop="8dp"
-        android:paddingBottom="120dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fabAddNote"
@@ -150,6 +138,6 @@
         app:icon="@drawable/ic_add"
         android:textColor="@color/white"
         app:backgroundTint="@color/primary"
-        app:iconTint="@color/white" />
+        app:iconTint="@color/white"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
