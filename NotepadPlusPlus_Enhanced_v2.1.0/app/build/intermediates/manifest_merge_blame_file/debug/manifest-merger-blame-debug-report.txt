@@ -133,7 +133,7 @@
 71-->/root/Newnote/NotepadPlusPlus_Enhanced_v2.1.0/app/src/main/AndroidManifest.xml:31:9-33:69
 72            android:name="com.google.android.gms.ads.APPLICATION_ID"
 72-->/root/Newnote/NotepadPlusPlus_Enhanced_v2.1.0/app/src/main/AndroidManifest.xml:32:13-69
-73            android:value="ca-app-pub-3940256099942544~3347511713" />
+73            android:value="ca-app-pub-1607968585289432~5123982781" />
 73-->/root/Newnote/NotepadPlusPlus_Enhanced_v2.1.0/app/src/main/AndroidManifest.xml:33:13-67
 74
 75        <!-- Preloaded fonts meta-data -->
