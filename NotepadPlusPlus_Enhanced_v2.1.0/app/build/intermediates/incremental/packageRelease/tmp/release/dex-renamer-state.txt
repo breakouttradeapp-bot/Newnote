@@ -1,0 +1,4 @@
+#Thu Mar 05 23:37:27 IST 2026
+base.0=/root/Newnote/NotepadPlusPlus_Enhanced_v2.1.0/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

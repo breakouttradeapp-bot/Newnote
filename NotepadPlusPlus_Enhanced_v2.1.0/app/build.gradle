@@ -6,23 +6,34 @@ plugins {
 
 android {
     namespace 'com.smartnotes.notepadplusplus'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.smartnotes.notepadplusplus"
         minSdk 24
-        targetSdk 34
+        targetSdk 35
         versionCode 2
         versionName "2.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("smartnotes-release-key.jks")
+            storePassword "Niv@904848"
+            keyAlias "smartnotes"
+            keyPassword "Niv@904848"
+        }
     }
 
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
         debug {
             minifyEnabled false
             debuggable true
@@ -44,11 +55,14 @@ android {
     }
 
     packaging {
-        resources { excludes += '/META-INF/{AL2.0,LGPL2.1}' }
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
     }
 }
 
 dependencies {
+
     // Core
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -99,6 +113,7 @@ dependencies {
     testImplementation 'org.mockito.kotlin:mockito-kotlin:5.2.1'
     testImplementation 'androidx.arch.core:core-testing:2.2.0'
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation 'androidx.test:runner:1.5.2'
