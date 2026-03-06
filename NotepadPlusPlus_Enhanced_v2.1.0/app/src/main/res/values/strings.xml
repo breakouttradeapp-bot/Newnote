@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Notepad++</string>
+    <string name="app_name">SmartNotes - Notes &amp; Memo</string>
     <string name="tagline">Smart Notes</string>
     <string name="search_notes">Search notes…</string>
     <string name="no_notes">No Notes Yet</string>

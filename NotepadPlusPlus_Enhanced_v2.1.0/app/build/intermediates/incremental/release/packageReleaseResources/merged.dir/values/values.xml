@@ -37,7 +37,7 @@
     <color name="text_secondary">#4B5563</color>
     <color name="white">#FFFFFF</color>
     <string name="add_note">Add Note</string>
-    <string name="app_name">Notepad++</string>
+    <string name="app_name">SmartNotes - Notes &amp; Memo</string>
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
     <string name="delete_note">Delete Note</string>
